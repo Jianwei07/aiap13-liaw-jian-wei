@@ -9,7 +9,7 @@
             "port": 3306,
             "driver": "MySQL",
             "name": "failure",
-            "database": "failure.db",
+            "database": "data\failure.db",
             "username": "jway"
         }
     ]

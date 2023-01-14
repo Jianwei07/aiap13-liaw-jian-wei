@@ -1,5 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -9,7 +8,7 @@ from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 
 # Load the data
-data = pd.read_csv("failures.csv")
+data = pd.read_csv("data aiap13\failures.csv")
 
 # Perform preprocessing
 data.dropna(inplace=True)
