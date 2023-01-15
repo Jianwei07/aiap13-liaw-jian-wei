@@ -1,10 +1,11 @@
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
+import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+import matplotlib.pyplot as plt
 
 # Load the data
 data = pd.read_csv("C:\\Users\\Jianw\\Documents\\GitHub\\aiap13-liaw-jian-wei-026z\\data aiap13\\failure.csv")
@@ -20,26 +21,31 @@ y = data["Failure"]
 # Split the data into training and test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-# Scale the data
-scaler = StandardScaler()
-X_train = scaler.fit_transform(X_train)
-X_test = scaler.transform(X_test)
+# Train and evaluate a logistic regression model
+log_reg = LogisticRegression()
+log_reg.fit(X_train, y_train)
+y_pred = log_reg.predict(X_test)
+print("Accuracy for Logistic Regression:", accuracy_score(y_test, y_pred))
+print("Confusion Matrix for Logistic Regression:\n", confusion_matrix(y_test, y_pred))
 
-# Create a dictionary to store the models
-models = {"Random Forest": RandomForestClassifier(),
-          "SVM": SVC(),
-          "Logistic Regression": LogisticRegression()}
+# Train and evaluate a decision tree model
+dt = DecisionTreeClassifier()
+dt.fit(X_train, y_train)
+y_pred = dt.predict(X_test)
+print("Accuracy for Decision Tree:", accuracy_score(y_test, y_pred))
+print("Confusion Matrix for Decision Tree:\n", confusion_matrix(y_test, y_pred))
 
-for name, model in models.items():
-    # Train the model
-    model.fit(X_train, y_train)
+# Train and evaluate a random forest model
+rf = RandomForestClassifier()
+rf.fit(X_train, y_train)
+y_pred = rf.predict(X_test)
+print("Accuracy for Random Forest:", accuracy_score(y_test, y_pred))
+print("Confusion Matrix for Random Forest:\n", confusion_matrix(y_test, y_pred))
 
-    # Predict on test set
-    y_pred = model.predict(X_test)
-
-    # Evaluate the model
-    acc = accuracy_score(y_test, y_pred)
-    precision = precision_score(y_test, y_pred)
-    recall = recall_score(y_test, y_pred)
-    f1 = f1_score(y_test, y_pred)
-    print(f"{name} - accuracy: {acc}, precision: {precision}, recall: {recall}, f1: {f1}")
+# Visualize the results
+models = ['Logistic Regression', 'Decision Tree', 'Random Forest']
+accuracies = [accuracy_score(y_test, log_reg.predict(X_test)), accuracy_score(y_test, dt.predict(X_test)), accuracy_score(y_test, rf.predict(X_test))]
+plt.bar(models, accuracies)
+plt.xlabel('Model')
+plt.ylabel('Accuracy')
+plt.show()
