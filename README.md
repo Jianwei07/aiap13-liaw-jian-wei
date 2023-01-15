@@ -1,6 +1,4 @@
-aiap13-liaw-jian-wei-026z
-
-# **AIAP13 Technical Assessment**
+# **AIAP13 Technical Assessment** _aiap13-liaw-jian-wei-026z_
 
 ## Name: Liaw Jian Wei
 ## Email: liawjianwei@outlook.com
