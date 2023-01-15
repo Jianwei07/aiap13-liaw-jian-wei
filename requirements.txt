@@ -1,4 +1,3 @@
-#following are the required packges for this project .venv.
 asttokens==2.2.1
 backcall==0.2.0
 click==8.1.3
