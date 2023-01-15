@@ -1,9 +1,9 @@
-###aiap13-liaw-jian-wei-026z
+aiap13-liaw-jian-wei-026z
 
-**#AIAP13 Technical Assessment**
+# **AIAP13 Technical Assessment**
 
-##Name: Liaw Jian Wei
-##Email: liawjianwei@outlook.com
+## Name: Liaw Jian Wei
+## Email: liawjianwei@outlook.com
 
 This submission consists of the following documents
     1. .venv - Virtual enviroment created to host this project using vscode 
