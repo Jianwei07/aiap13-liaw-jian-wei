@@ -50,6 +50,10 @@ data preprocessing, feature engineering, model selection, model evaluation and v
 
     e. a bar chart was exported as visualization for this code 
 
+# Personal Thoughts
+This assessment was an eye-opening one from the usual hackerrank/hackerearth test. This requires the programmer to sort 
+and test the data which refreshed my memory and taught me new things. I do hope that I am given the opportunity to learn 
+and work with AIAP to further add value to any industry through digitilization. 
 
     
     
