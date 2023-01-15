@@ -28,7 +28,7 @@ _eda.ipynb_, Exploratory Data Analysis using jupyter notebook
     e. _conn = sqlite3.connect("C:\\Users\\Jianw\\Documents\\GitHub\\aiap13-liaw-jian-wei-026z\\data aiap13\\failure.db")_ 
     a long pathway was keyed in because error kepy appear for data\failure.db even after editing the setting.json
      
-###Conclusion
+##Conclusion
 EDA as stated in the name, derives the purpose the analysis the data and present it in visuals using visualization tools. 
 More visualizations can be done through dash.app. and plotly. 
 
