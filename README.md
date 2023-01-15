@@ -27,7 +27,11 @@ _eda.ipynb_, Exploratory Data Analysis using jupyter notebook
         
     e. _conn = sqlite3.connect("C:\\Users\\Jianw\\Documents\\GitHub\\aiap13-liaw-jian-wei-026z\\data aiap13\\failure.db")_ 
     a long pathway was keyed in because error kepy appear for data\failure.db even after editing the setting.json
-     
+
+    f. To ease identifying the failures againist the model, a code was wrriten to total up the failures and export
+    as a csv file. 
+    _data = pd.read_sql_query("SELECT * FROM Failure", conn)_
+    _data["Failure"] = data[["Failure A","Failure B","Failure C","Failure D","Failure E"]].sum(axis=1)_
 ### Conclusion
 EDA as stated in the name, derives the purpose the analysis the data and present it in visuals using visualization tools. 
 More visualizations can be done through dash.app. and plotly. 
@@ -42,7 +46,13 @@ data preprocessing, feature engineering, model selection, model evaluation and v
     b. using pandas, sklearn matrix and parameters, the csv data was processed. 
     The data were split and trained into different test sets using the *n_train, n_test* parameters
     
-    c. the model was trained using a random forest classifier, SVC and logistic regression to train the model
+    c. the model was trained using a random forest classifier, Decision Tree and Logistic Regression to train the model
+
+    d. Confusion Matrix 2x2 layout was present for a binary classification type as it is either a yes or a no 
+
+    e. a bar chart was exported as visualization for this code 
+
+
     
     
 
