@@ -1,4 +1,5 @@
-# **AIAP13 Technical Assessment** _aiap13-liaw-jian-wei-026z_
+# **AIAP13 Technical Assessment** 
+_aiap13-liaw-jian-wei-026z_
 
 ## Name: Liaw Jian Wei
 ## Email: liawjianwei@outlook.com
@@ -15,7 +16,7 @@ _eda.ipynb_, Exploratory Data Analysis using jupyter notebook
        _data = pd.read_sql_ uses the pandas library to read data from a SQL table called "Failure" 
        using a SQL query "SELECT * FROM Failure" and store the returned data in a variable called "data". 
        
-    b. **print(), head,describe and infor** were use to show some data for counterchecking purposes
+    b. **print(), head,describe and infor** were use to show some data for counterchecking purposes prior to analyse the data. 
 
     c. _make_group_ method was used to perform aggregate function on the data to identify the 
     different models and finding the mean of the numeric column a bar chart was created to 
