@@ -50,8 +50,8 @@ data preprocessing, feature engineering, model selection, model evaluation and v
 
     e. a bar chart was exported as visualization for this code 
 
-unable to identify mistake to fix run.sh after trying different ways to connect MLP.py pathway to run.sh. 
-MLP.py individually is able to produce results. 
+_Unable to identify mistake to fix run.sh after trying different ways to connect MLP.py pathway to run.sh. 
+MLP.py individually is able to produce results._
 
 ### Personal Thoughts
 This assessment was an eye-opening one from the usual hackerrank/hackerearth test. This requires the programmer to sort 
