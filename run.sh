@@ -1,6 +1,4 @@
 #!/bin/bash
-src\MLP_module1.py
-
-actions/checkout@v2
+MLP_module1.py
 
 chmod +x run.sh
