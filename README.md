@@ -12,7 +12,7 @@ This submission consists of the following documents
 2. Task 1 - Exploratory Data Analysis (EDA) 
 _eda.ipynb_, Exploratory Data Analysis using jupyter notebook
 
-# OUTLINE    :  THIS PROGRAM CONTAINS THE FOLLOWING KEY PROCESSES
+### OUTLINE:  PROGRAM OUTLINE
               (1) IMPORT LIBRARIES AND INITIALISATION. (SQLITE3)
               (2) READ IN DATA AND VERIFICATION. (PANDAS, PRINT)
               (3) DATA CLEANING AND TRANSFORMATION
