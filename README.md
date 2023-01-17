@@ -12,6 +12,13 @@ This submission consists of the following documents
 2. Task 1 - Exploratory Data Analysis (EDA) 
 _eda.ipynb_, Exploratory Data Analysis using jupyter notebook
 
+# OUTLINE    :  THIS PROGRAM CONTAINS THE FOLLOWING KEY PROCESSES
+              (1) IMPORT LIBRARIES AND INITIALISATION. (SQLITE3)
+              (2) READ IN DATA AND VERIFICATION. (PANDAS, PRINT)
+              (3) DATA CLEANING AND TRANSFORMATION
+              (4) DATA VISUALIZATION (Linechart)
+              (5) CONCLUSION AND FOLLOWUP TO TASK 2
+
     a. given the failure.db file, the eda.ipynb was coded in a way to read the file using *sqlite3*
        _data = pd.read_sql_ uses the pandas library to read data from a SQL table called "Failure" 
        using a SQL query "SELECT * FROM Failure" and store the returned data in a variable called "data". 
