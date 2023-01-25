@@ -40,7 +40,7 @@ _data = pd.read_sql_query("SELECT * FROM Failure", conn)_
 _data["Failure"] = data[["Failure A","Failure B","Failure C","Failure D","Failure E"]].sum(axis=1)_
 
 ### Conclusion
-EDA as stated in the name, derives the purpose the analysis the data and present it in visuals using visualization tools. 
+EDA as stated in the name, derives the purpose of analysing the data and present it in visuals using data visualization tools. 
 More visualizations can be done through dash.app. and plotly. 
 
 ## 3. Task 2: End-to-end Machine Learning Pipeline (MLP)
